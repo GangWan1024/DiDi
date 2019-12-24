@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="../js/mui.min.js"></script>
+		<link href="../css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1579298_2z9ro7noeym.css">
+        <script type="text/javascript" charset="utf-8">
+			mui.init();
+		</script>
+		<style>
+			.mui-bar-tab .mui-tab-item.mui-active {
+						color: limegreen;
+					}
+		    li{
+				width:100%;
+				height:50px;
+			}
+			.mui-btn {
+				width:300px;
+				height:30px;
+				padding:20px;
+				margin:20px;
+			}
+			
+				</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">注册客户</h1>
+		</header>
+		<div>
+			<div><ul class="mui-table-view">
+				<div><li class="mui-table-view-cell">客户姓名:50000.00元</li></div>
+				<div><li class="mui-table-view-cell">手机号:</li></div>
+				<div><li class="mui-table-view-cell">身份证号:</li></div>
+				<div><li class="mui-table-view-cell">
+				<a class="active">客户类型:钻石会员<span class="mui-icon mui-icon-arrowdown mui-pull-right"></span></a></li></div>
+				<div class="mui-card"><li class="mui-table-view-cell">性别:
+				
+					
+						<input name="radio1" type="radio"value="男" <span>男</span>
+					
+						<input name="radio1" type="radio"value="女" checked=""<span>女</span> 
+					
+							</li></div>
+				<div><li class="mui-table-view-cell">Email:</li></div>
+				<div><li class="mui-table-view-cell">联系地址:</li></div>
+				<div><li class="mui-table-view-cell">我已同意以下条款</li></div>
+			</ul>
+			</div>
+					
+		</div>
+		<div class="mui-btn mui-btn-primary" style="float:center">
+							完成注册
+						</div>
+		<nav class="mui-bar mui-bar-tab">
+					<a class="mui-tab-item mui-active">
+						<div class="iconfont icon-shouye"></div>
+						<div class="mui-tab-label">首页</div>
+					</a>
+					<a class="mui-tab-item" href="#">
+						<div class="iconfont icon-xiangmu"></div>
+						<div class="mui-tab-label">创业项目</div>
+					</a>
+					<a class="mui-tab-item" href="#">
+						<div class="iconfont icon-liucheng"></div>
+						<div class="mui-tab-label">报名流程</div>
+					</a>
+					<a class="mui-tab-item" href="#">
+						<div class="iconfont icon-xiangmuguanli"></div>
+						<div class="mui-tab-label">报名流程</div>
+					</a>
+					<a class="mui-tab-item" href="#">
+						<div class="iconfont icon-wode"></div>
+						<div class="mui-tab-label">我的滴滴</div>
+					</a>
+				</nav>
+
+	</body>
+	<script src="../js/mui.js"></script>
+	<script type="text/javascript">
+		mui("body").on("tap", "a", function() {
+			document.location.href = this.href;
+		});
+		var info = document.getElementById("info");
+				document.querySelector('.mui-table-view.mui-table-view-radio').addEventListener('selected',function(e){
+					info.innerHTML = "当前选中的为："+e.detail.el.innerText;
+				});
+				
+	
+	</script>
+</html>
+</div>
