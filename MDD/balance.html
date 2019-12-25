@@ -1,4 +1,4 @@
-﻿<!doctype html>
+<!doctype html>
 <html>
 
 	<head>
@@ -8,12 +8,12 @@
 		<title></title>
 
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1579298_2z9ro7noeym.css">
 		<link href="../css/mui.css" rel="stylesheet" />
 	</head>
 
-		<style>
-			.wrap{width: 100%;}
+	<style>
+		.wrap{width: 100%;}
 			
 			.zt{
 				background-color: white;
@@ -66,30 +66,55 @@
 			.font01{color: white;}
 		</style>
 	<body>
-		<script src="js/mui.js"></script>
-		<script type="text/javascript">
-			mui.init()
-		</script>
-		<header class="mui-bar mui-bar-nav">
+
+		<header class="mui-bar mui-bar-nav" style="background-color: #006db8;">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">余额查询</h1>
-			
+			<h1 class="mui-title" style="color: white;">账户余额</h1>
+
 		</header>
 		<br />
-		<br/>
+		<br />
 		<div class="wrap">
-		<div class="zt">	
-		<h1 class="gs" style="color: #FF5053;"> ￥150000</h1>
-		</div>
+			<div class="zt">
+				<h1 class="gs" style="color: #FF5053;"> ￥150000</h1>
+			</div>
 		</div>
 		<div class="wrap">
 			<div class="bt">
 				<div class="tz">
-					<button type="button" class="font01">申请提现</button>
+					<a href="ApplyWithdraw.html"><button type="button" class="font01">申请提现</button></a>
 				</div>
 			</div>
-			
-		</div>
-	</body>
 
+		</div>
+
+	<nav class="mui-bar mui-bar-tab" >
+		<a class="mui-tab-item" href="../index.html">
+			<div class="iconfont icon-shouye"></div>
+			<div class="mui-tab-label">首页</div>
+		</a>
+		<a class="mui-tab-item" href="../VP/Diamond entrepreneurs.html">
+			<div class="iconfont icon-xiangmu"></div>
+			<div class="mui-tab-label">创业项目</div>
+		</a>
+		<a class="mui-tab-item" href="../RP/Registration process.html">
+			<div class="iconfont icon-liucheng"></div>
+			<div class="mui-tab-label">报名流程</div>
+		</a>
+		<a class="mui-tab-item" href="../PS/Platform style.html">
+			<div class="iconfont icon-xiangmuguanli"></div>
+			<div class="mui-tab-label">平台风采</div>
+		</a>
+		<a class="mui-tab-item mui-active" href="./Login.html">
+			<div class="iconfont icon-wode"></div>
+			<div class="mui-tab-label">我的滴滴</div>
+		</a>
+	</nav>
+	</body>
+	<script src="../js/mui.js"></script>
+	<script type="text/javascript">
+		mui("body").on("tap", "a", function() {
+			document.location.href = this.href;
+		})
+	</script>
 </html>

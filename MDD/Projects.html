@@ -11,9 +11,9 @@
 
 	<body>
 <div>
-			<header class="mui-bar mui-bar-nav">
+			<header class="mui-bar mui-bar-nav" style="background-color: #006db8;">
 				<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-				<h1 class="mui-title">工程案例</h1>
+				<h1 class="mui-title" style="color: white;">工程案例</h1>
 			</header>
 		</div>
 		<br>
@@ -56,32 +56,35 @@
 
 
 		
-		<nav class="mui-bar mui-bar-tab">
-			<a class="mui-tab-item mui-active">
-				<div class="iconfont icon-shouye"></div>
-				<div class="mui-tab-label">首页</div>
-			</a>
-			<a class="mui-tab-item" href="#">
-				<div class="iconfont icon-xiangmu"></div>
-				<div class="mui-tab-label">创业项目</div>
-			</a>
-			<a class="mui-tab-item" href="#">
-				<div class="iconfont icon-liucheng"></div>
-				<div class="mui-tab-label">报名流程</div>
-			</a>
-			<a class="mui-tab-item" href="#">
-				<div class="iconfont icon-xiangmuguanli"></div>
-				<div class="mui-tab-label">报名流程</div>
-			</a>
-			<a class="mui-tab-item" href="#">
-				<div class="iconfont icon-wode"></div>
-				<div class="mui-tab-label">我的滴滴</div>
-			</a>
-		</nav>
+
+	<nav class="mui-bar mui-bar-tab" >
+		<a class="mui-tab-item" href="../index.html">
+			<div class="iconfont icon-shouye"></div>
+			<div class="mui-tab-label">首页</div>
+		</a>
+		<a class="mui-tab-item" href="../VP/Diamond entrepreneurs.html">
+			<div class="iconfont icon-xiangmu"></div>
+			<div class="mui-tab-label">创业项目</div>
+		</a>
+		<a class="mui-tab-item" href="../RP/Registration process.html">
+			<div class="iconfont icon-liucheng"></div>
+			<div class="mui-tab-label">报名流程</div>
+		</a>
+		<a class="mui-tab-item" href="../PS/Platform style.html">
+			<div class="iconfont icon-xiangmuguanli"></div>
+			<div class="mui-tab-label">平台风采</div>
+		</a>
+		<a class="mui-tab-item mui-active" href="./Login.html">
+			<div class="iconfont icon-wode"></div>
+			<div class="mui-tab-label">我的滴滴</div>
+		</a>
+	</nav>
 	</body>
 	<script src="../js/mui.js"></script>
 	<script type="text/javascript">
-		mui.init()
+		mui("body").on("tap", "a", function() {
+			document.location.href = this.href;
+		})
 	</script>
 
 </html>

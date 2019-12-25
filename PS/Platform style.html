@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<title></title>
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link href="css/mui.css" rel="stylesheet" />
+		<link href="../css/mui.css" rel="stylesheet" />
 		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1579298_2z9ro7noeym.css">
 
 		<style>
@@ -22,15 +22,14 @@
 	</head>
 
 	<body>
-		<header class="mui-bar mui-bar-nav">
-			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">平台风采</h1>
+		<header class="mui-bar mui-bar-nav" style="background-color: #006db8;">
+			<h1 class="mui-title" style="color: white;">平台风采</h1>
 		</header>
 		<br>
 		<br>
 		
 		<div class="img">
-			<img src="./image/01.png" alt="">
+			<img src="../image/01.png" alt="">
 		</div>
 		<h2 >公司简介</h2>
 		<hr style="border : 1px dashed orange;" />
@@ -46,28 +45,28 @@
 			，我们始终坚持用户至上，全心服务，创业者成功平台才成功的企业核心价值观。</p>
 			
 			<p>欢迎各位创业者到平台，如您对平台感兴趣或有疑问，请您联系我们</p>
-		<nav class="mui-bar mui-bar-tab">
-					<a class="mui-tab-item mui-active">
-						<div class="iconfont icon-shouye"></div>
-						<div class="mui-tab-label">首页</div>
-					</a>
-					<a class="mui-tab-item" href="#">
-						<div class="iconfont icon-xiangmu"></div>
-						<div class="mui-tab-label">创业项目</div>
-					</a>
-					<a class="mui-tab-item" href="#">
-						<div class="iconfont icon-liucheng"></div>
-						<div class="mui-tab-label">报名流程</div>
-					</a>
-					<a class="mui-tab-item" href="#">
-						<div class="iconfont icon-xiangmuguanli"></div>
-						<div class="mui-tab-label">报名流程</div>
-					</a>
-					<a class="mui-tab-item" href="#">
-						<div class="iconfont icon-wode"></div>
-						<div class="mui-tab-label">我的滴滴</div>
-					</a>
-				</nav>
+	<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="../index.html">
+				<div class="iconfont icon-shouye"></div>
+				<div class="mui-tab-label">首页</div>
+			</a>
+			<a class="mui-tab-item" href="../VP/Diamond entrepreneurs.html">
+				<div class="iconfont icon-xiangmu"></div>
+				<div class="mui-tab-label">创业项目</div>
+			</a>
+			<a class="mui-tab-item" href="../RP/Registration process.html">
+				<div class="iconfont icon-liucheng"></div>
+				<div class="mui-tab-label">报名流程</div>
+			</a>
+			<a class="mui-tab-item mui-active" href="./Platform style.html">
+				<div class="iconfont icon-xiangmuguanli"></div>
+				<div class="mui-tab-label">平台风采</div>
+			</a>
+			<a class="mui-tab-item" href="../MDD/Login.html">
+				<div class="iconfont icon-wode"></div>
+				<div class="mui-tab-label">我的滴滴</div>
+			</a>
+		</nav>
 
 		
 		
@@ -83,9 +82,11 @@
 		
 		
 		<script src="js/mui.js"></script>
-		<script type="text/javascript">
-			mui.init()
-		</script>
+	<script type="text/javascript">
+		mui("body").on("tap", "a", function() {
+			document.location.href = this.href;
+		})
+	</script>
 	</body>
 
 </html>

@@ -8,8 +8,8 @@
 		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1579298_2z9ro7noeym.css">
 		<link href="../css/mui.css" rel="stylesheet" />
 		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1579298_2z9ro7noeym.css">
-				<style>
-					.b{display:flex;
+		<style>
+			.b{display:flex;
 		                width:100%;
 		                height:100px;
 		                flex-wrap:nowrap;
@@ -27,27 +27,24 @@
 
 	<body>
 
-
-		<header class="mui-bar mui-bar-nav">
-			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">创业项目</h1>
+		<header class="mui-bar01 mui-bar-nav">
+			<h1 class="mui-title" style="color: white;">创业项目</h1>
 		</header>
 		<div class="mui-content">
 			<div style="padding: 10px 10px;">
 				<div id="segmentedControl" class="mui-segmented-control">
-					<a class="mui-control-item mui-active" href="#item1">钻石创业者</a>
-					<a class="mui-control-item " href="#item2">金牌创业者</a>
-					<a class="mui-control-item" href="#item3">银牌创业者</a>
+					<a class="mui-control-item mui-active" href="Diamond entrepreneurs.html">钻石创业者</a>
+					<a class="mui-control-item " href="Venture project gold .1.html">金牌创业者</a>
+					<a class="mui-control-item" href="Venture project silver .html">银牌创业者</a>
 				</div>
 			</div>
 			<div>
-				<div id="item1" class="mui-control-content">
 					<ul class="mui-table-view">
 						<li class="mui-table-view-cell">
 							<img src="../image/17.png" width="100%" height="180px">
 						</li>
 					</ul>
-		
+
 					<div style="width:100%; height:20px;">
 						<h4>服务内容</h4>
 					</div>
@@ -75,7 +72,7 @@
 					<div style="width:100%; height:20px;">
 						<h4>创业者享受的回报收益</h4>
 					</div>
-					<div class="b">
+					<div class="b" style="background-color:#f5f5f5;">
 						<div style="background-color: #fff;width:5%; height:100px;"></div>
 						<div class="so"><img src="../image/14.png"></div>
 						<div class="so"><img src="../image/15.png"></div>
@@ -94,52 +91,52 @@
 					<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp②业绩流水≥1.2亿。</p>
 					<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp当满足以上2个条件时，钻石创业者才能取得期权。</p>
 					<p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp注：上面的y、z为财务数据，由财务部门按期提供，录入即可。
-		
-		
-		
-		
-				</div>
-		
+
+
 			</div>
-		
-		
-		
-		
-		
+			
+
+
+
+
+
 			<br>
 			<br>
 			<br>
-		
-		
-		
-		
-		
-		<nav class="mui-bar mui-bar-tab">
-			<a class="mui-tab-item mui-active">
+
+
+
+
+
+	<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="../index.html">
 				<div class="iconfont icon-shouye"></div>
 				<div class="mui-tab-label">首页</div>
 			</a>
-			<a class="mui-tab-item" href="#">
+			<a class="mui-tab-item mui-active" href="./Diamond entrepreneurs.html">
 				<div class="iconfont icon-xiangmu"></div>
 				<div class="mui-tab-label">创业项目</div>
 			</a>
-			<a class="mui-tab-item" href="#">
+			<a class="mui-tab-item" href="../RP/Registration process.html">
 				<div class="iconfont icon-liucheng"></div>
 				<div class="mui-tab-label">报名流程</div>
 			</a>
-			<a class="mui-tab-item" href="#">
+			<a class="mui-tab-item " href="../PS/Platform style.html">
 				<div class="iconfont icon-xiangmuguanli"></div>
-				<div class="mui-tab-label">报名流程</div>
+				<div class="mui-tab-label">平台风采</div>
 			</a>
-			<a class="mui-tab-item" href="#">
+			<a class="mui-tab-item" href="../MDD/Login.html">
 				<div class="iconfont icon-wode"></div>
 				<div class="mui-tab-label">我的滴滴</div>
 			</a>
 		</nav>
+	
 	</body>
 	<script src="../js/mui.js"></script>
 	<script type="text/javascript">
-		mui.init()
+		mui("body").on("tap", "a", function() {
+			document.location.href = this.href;
+		})
 	</script>
 
 </html>

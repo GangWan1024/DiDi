@@ -12,54 +12,66 @@
 	<body>
 
 
-		<header class="mui-bar mui-bar-nav">
-			<h1 class="mui-title">登陆</h1>
+		<header class="mui-bar mui-bar-nav" style="background-color: #006db8;">
+			<h1 class="mui-title" style="color: white;">登陆</h1>
 		</header>
+		<br />
+		<br />
+		
+		<div class="mui-card-header mui-card-media" style="height:50vw;background-image:url(../images/用户头像.png)"></div>
 
+		
 
-
-		<form class="mui-input-group">
-			<div class="mui-input-row"></div>
-			<div class="mui-input-row">
-				<label>用户名</label>
-				<input type="text" class="mui-input-clear" placeholder="请输入用户名">
-			</div>
-			<div class="mui-input-row">
-				<label>密码</label>
-				<input type="password" class="mui-input-password" placeholder="请输入密码">
-			</div>
+		<form>
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-media">
+					<div class="mui-input-row">
+						<label>用户名</label>
+						<input type="text" class="mui-input-clear" placeholder="请输入用户名">
+					</div>
+				</li>
+				<li class="mui-table-view-cell mui-media">
+					<div class="mui-input-row">
+						<label>密码</label>
+						<input type="password" class="mui-input-password" placeholder="请输入密码">
+					</div>
+				</li>
+			</ul>
 			<div class="mui-button-row">
-				<button type="button" class="mui-btn mui-btn-primary">确认</button>
-				<button type="button" class="mui-btn mui-btn-danger">取消</button>
+				<a href="Personal Information.html"><button type="button" class="mui-btn mui-btn-primary mui-btn-block">登陆</button></a>
+				<a href="Registered customers.html"><button type="button" class="mui-btn mui-btn-block mui-btn-outlined">免费注册</button></a>
 			</div>
 		</form>
 
-		<nav class="mui-bar mui-bar-tab">
-			<a class="mui-tab-item mui-active">
-				<div class="iconfont icon-shouye"></div>
-				<div class="mui-tab-label">首页</div>
-			</a>
-			<a class="mui-tab-item" href="#">
-				<div class="iconfont icon-xiangmu"></div>
-				<div class="mui-tab-label">创业项目</div>
-			</a>
-			<a class="mui-tab-item" href="#">
-				<div class="iconfont icon-liucheng"></div>
-				<div class="mui-tab-label">报名流程</div>
-			</a>
-			<a class="mui-tab-item" href="#">
-				<div class="iconfont icon-xiangmuguanli"></div>
-				<div class="mui-tab-label">报名流程</div>
-			</a>
-			<a class="mui-tab-item" href="#">
-				<div class="iconfont icon-wode"></div>
-				<div class="mui-tab-label">我的滴滴</div>
-			</a>
-		</nav>
+
+	<nav class="mui-bar mui-bar-tab" >
+		<a class="mui-tab-item" href="../index.html">
+			<div class="iconfont icon-shouye"></div>
+			<div class="mui-tab-label">首页</div>
+		</a>
+		<a class="mui-tab-item" href="../VP/Diamond entrepreneurs.html">
+			<div class="iconfont icon-xiangmu"></div>
+			<div class="mui-tab-label">创业项目</div>
+		</a>
+		<a class="mui-tab-item" href="../RP/Registration process.html">
+			<div class="iconfont icon-liucheng"></div>
+			<div class="mui-tab-label">报名流程</div>
+		</a>
+		<a class="mui-tab-item" href="../PS/Platform style.html">
+			<div class="iconfont icon-xiangmuguanli"></div>
+			<div class="mui-tab-label">平台风采</div>
+		</a>
+		<a class="mui-tab-item mui-active" href="./Login.html">
+			<div class="iconfont icon-wode"></div>
+			<div class="mui-tab-label">我的滴滴</div>
+		</a>
+	</nav>
 	</body>
 	<script src="../js/mui.js"></script>
 	<script type="text/javascript">
-		mui.init()
+		mui("body").on("tap", "a", function() {
+			document.location.href = this.href;
+		})
 	</script>
 
 </html>

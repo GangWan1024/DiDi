@@ -7,82 +7,159 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1579298_2z9ro7noeym.css">
 		<link href="../css/mui.css" rel="stylesheet" />
-		
-	
-	
+
+		<style>
+			.duanxing{
+				display: flex;
+				width: 100%;
+				height: 40px;
+				flex-wrap: nowrap;
+				justify-content: space-between ;
+			}
+			.form-group{
+				display: flex;
+				width: 100%;
+				height: 40px;
+				flex-wrap: nowrap;
+				justify-content: space-between ;
+			}
+			.zuo1{
+				display: flex;
+				width: 50%;
+				height: 40px;
+				flex-wrap: nowrap;
+				align-items: flex-start ;
+				
+			}
+			.zuo2{
+				display: flex;
+				width: 50%;
+				height: 40px;
+				flex-wrap: nowrap;
+				align-items: flex-start ;	
+			}
+			
+			.an{
+				display: flex;
+				width: 100%;
+				height: 40px;
+				flex-wrap: nowrap;
+				align-items: flex-start ;
+			}
+			.son1{
+				width: 6%;
+				height: 20px;
+			}
+			.mui-btn {
+				width: 100%;
+				height: 40px;
+				color: #000000;
+			}
+		</style>
+
 	</head>
 
 	<body>
 
-		<header id="header" class="mui-bar mui-bar-nav">
+		<header id="header" class="mui-bar mui-bar-nav" style="background-color: #006db8;">
 			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
-			<h1 class="mui-title">快速注册</h1>
+			<h1 class="mui-title" style="color: white;">快速注册</h1>
 		</header>
-	
-	<br><br><br>
+
+		<br><br><br>
 		<div>
 			<label>客户名称</label>
 			<input type="text" class="mui-input-clear" placeholder="请输入名称">
 		</div>
-		
+
 		<div>
-		<label>手机号</label>
-		<input type="text" class="mui-input-clear" placeholder="请输入手机号">
-		</div>
-		
-		<div>
-		<label>身份证号</label>
-		<input type="text" class="mui-input-clear" placeholder="请输入身份证号">
+			<label>手机号</label>
+			<input type="text" class="mui-input-clear" placeholder="请输入手机号">
 		</div>
 
 		<div>
-		<label>客户类型</label>
-		<div class="mui-content">
-			<select class="mui-btn mui-btn-block">
-				<option value="item-1">钻石客户</option>
-				<option value="item-2">黄金客户</option>
-				<option value="item-3">青铜客户</option>
-			</select>
-			<br />
+			<label>身份证号</label>
+			<input type="text" class="mui-input-clear" placeholder="请输入身份证号">
 		</div>
+
+		<div>
+			<label>客户类型</label>
+			<div class="mui-content">
+				<select class="mui-btnmui-btn-block">
+					<option value="item-1">钻石客户</option>
+					<option value="item-2">黄金客户</option>
+					<option value="item-3">青铜客户</option>
+				</select>
+				<br />
+			</div>
 		</div>
-		
-		<div class="form-group">
+
 		<label>验证码</label>
-		<input type="text" class="mui-input-clear" placeholder="">
-		</div>
-		
-		<div>
-		<label>短信验证</label>
-		<input type="text" class="mui-input-clear" placeholder="">
+		<div class="form-group">
+			<div class="zuo1">
+				<input type="text" class="mui-input-clear" placeholder="">
+			</div>
+			<div class="you1">
+				<img src="../image/yanzhengma.png" width="175px" height="40px">
+			</div>
 		</div>
 
-		<nav class="mui-bar mui-bar-tab">
-			<a class="mui-tab-item mui-active">
-				<div class="mui-icon mui-icon-home"></div>
-				<span class="mui-tab-label">首页</div>
+		<label>短信验证</label>
+		<div class="duanxing">
+			<div class="zuo2">
+				<input type="text" class="mui-input-clear" placeholder="">
+			</div>
+			<div class="you2">
+				<img src="../image/fasong.png" width="175px" height="40px">
+			</div>
+		</div>
+
+		<div class="an">
+			<div class="son1"><img src="../image/anniu.png"></div>
+			<div class="son2">
+				<h5>我已同意一下条款《用户使用协议》</h5>
+			</div>
+		</div>
+
+
+
+		<button type="button" class="mui-btn" style="background-color: #0062CC">
+			申请注册
+		</button>
+
+
+		<br>
+		<br>
+		<br>
+
+<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item" href="../index.html">
+				<div class="iconfont icon-shouye"></div>
+				<div class="mui-tab-label">首页</div>
 			</a>
-			<a class="mui-tab-item">
-				<div class="mui-icon mui-icon-phone"></div>
+			<a class="mui-tab-item" href="../VP/Diamond entrepreneurs.html">
+				<div class="iconfont icon-xiangmu"></div>
 				<div class="mui-tab-label">创业项目</div>
 			</a>
-			<a class="mui-tab-item">
-				<div class="mui-icon mui-icon-email"></div>
+			<a class="mui-tab-item" href="../RP/Registration process.html">
+				<div class="iconfont icon-liucheng"></div>
 				<div class="mui-tab-label">报名流程</div>
 			</a>
-			<a class="mui-tab-item">
-				<div class="mui-icon mui-icon-gear"></div>
+			<a class="mui-tab-item" href="../PS/Platform style.html">
+				<div class="iconfont icon-xiangmuguanli"></div>
 				<div class="mui-tab-label">平台风采</div>
 			</a>
-			<a class="mui-tab-item">
-				<div class="mui-icon mui-icon-gear"></div>
-				<div class="mui-tab-label">平台风采</div>
+			<a class="mui-tab-item mui-active" href="./Login.html">
+				<div class="iconfont icon-wode"></div>
+				<div class="mui-tab-label">我的滴滴</div>
 			</a>
 		</nav>
 	</body>
 	<script src="../js/mui.js"></script>
 	<script type="text/javascript">
-		mui.init()
+	mui("body").on("tap", "a", function() {
+		document.location.href = this.href;
+	})
 	</script>
 
 </html>

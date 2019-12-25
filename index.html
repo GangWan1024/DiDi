@@ -1,16 +1,89 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-    <title></title>
-    <script src="js/mui.min.js"></script>
-    <link href="css/mui.min.css" rel="stylesheet"/>
-    <script type="text/javascript" charset="utf-8">
-      	mui.init();
-    </script>
-</head>
-<body>
-	
-</body>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link href="./css/mui.css" rel="stylesheet" />
+		<link rel="stylesheet" href="http://at.alicdn.com/t/font_1579298_2z9ro7noeym.css">
+	</head>
+	<body>
+		<head>
+			<header class="mui-bar mui-bar-nav" style="background-color: #006db8;">
+
+				<h1 class="mui-title" style="color: white;">滴滴平台</h1>
+			</header>
+			<br />
+			<br />
+			<div style="width:100%; height:210px;background-image:url(./images/index.png)"></div>
+			<div>
+				<ul class="mui-table-view mui-grid-view mui-grid-9">
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="./VP/Diamond entrepreneurs.html">
+							<div style="border-left: 19px solid #FFFFFF; width: 75px; height:55px;background-image:url(./images/1.png)"></div>
+							<div class="mui-media-body">创业项目</div>
+						</a></li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="./PS/Platform style.html">
+							<div style="border-left: 19px solid #FFFFFF; width: 75px; height:55px;background-image:url(./images/2.png)"></div>
+							<div class="mui-media-body">平台风采</div>
+						</a></li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="./RP/Registration process.html">
+							<div style="border-left: 19px solid #FFFFFF; width: 75px; height:55px;background-image:url(./images/3.png)"></div>
+							<div class="mui-media-body">报名流程</div>
+						</a></li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="./MDD/Myclient.html">
+							<div style="border-left: 19px solid #FFFFFF; width: 75px; height:55px;background-image:url(./images/4.png)"></div>
+							<div class="mui-media-body">客户管理</div>
+						</a></li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="./MDD/balance.html">
+							<div style="border-left: 19px solid #FFFFFF; width: 75px; height:55px;background-image:url(./images/5.png)"></div>
+							<div class="mui-media-body">财务管理</div>
+						</a></li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="./MDD/NewBulletin.html">
+							<div style="border-left: 23px solid #FFFFFF; width: 75px; height:55px;background-image:url(./images/6.png)"></div>
+							<div class="mui-media-body">新闻公告</div>
+						</a></li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="./MDD/Projects.html">
+							<div style="border-left: 20px solid #FFFFFF; width: 75px; height:55px;background-image:url(./images/7.png)"></div>
+							<div class="mui-media-body">工程案例</div>
+						</a></li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="./MDD/change password.html">
+							<div style="border-left: 22px solid #FFFFFF; width: 75px; height:55px;background-image:url(./images/8.png)"></div>
+							<div class="mui-media-body">修改密码</div>
+						</a></li>
+					<li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3"><a href="./MDD/Registered customers.html">
+							<div style="border-left: 17px solid #FFFFFF; width: 75px; height:55px;background-image:url(./images/9.png)"></div>
+							<div class="mui-media-body">注册客户</div>
+						</a></li>
+				</ul>
+			</div>
+
+			<nav class="mui-bar mui-bar-tab" href="index.html">
+				<a class="mui-tab-item mui-active">
+					<div class="iconfont icon-shouye"></div>
+					<div class="mui-tab-label">首页</div>
+				</a>
+				<a class="mui-tab-item" href="./VP/Diamond entrepreneurs.html">
+					<div class="iconfont icon-xiangmu"></div>
+					<div class="mui-tab-label">创业项目</div>
+				</a>
+				<a class="mui-tab-item" href="./RP/Registration process.html">
+					<div class="iconfont icon-liucheng"></div>
+					<div class="mui-tab-label">报名流程</div>
+				</a>
+				<a class="mui-tab-item" href="./PS/Platform style.html">
+					<div class="iconfont icon-xiangmuguanli"></div>
+					<div class="mui-tab-label">平台风采</div>
+				</a>
+				<a class="mui-tab-item" href="./MDD/Login.html">
+					<div class="iconfont icon-wode"></div>
+					<div class="mui-tab-label">我的滴滴</div>
+				</a>
+			</nav>
+	</body>
+	<script src="js/mui.js"></script>
+	<script type="text/javascript">
+		mui("body").on("tap", "a", function() {
+			document.location.href = this.href;
+		})
+	</script>
 </html>
